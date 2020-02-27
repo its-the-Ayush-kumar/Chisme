@@ -1,0 +1,16 @@
+{
+  "name": "chisme",
+  "version": "1.0.0",
+  "description": "Ayush's first chat room application",
+  "main": "server.js",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "ayush",
+  "license": "ISC"
+}
