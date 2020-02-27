@@ -1,0 +1,20 @@
+body{
+    background-color: #2e0505;
+    color:#555;
+    font-family: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#chat{
+    background-color: blanchedalmond;
+    height: 80%;
+}
+
+
