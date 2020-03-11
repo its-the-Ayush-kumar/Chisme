@@ -6,15 +6,53 @@ body{
     margin: 0;
 }
 
+button{
+    background-color: green;
+    border: none;
+    height: 100%;
+}
+
 .container{
     width: 80%;
     text-align: center;
     margin: 0 auto;
 }
 
-#chat{
+#info{
     background-color: blanchedalmond;
-    height: 80%;
+    position: fixed;
+    top: 0px;
+    width: 80%;
+    height: 40px;
 }
 
+#chat{
+    background-color: blanchedalmond;
+    z-index: -1;
+    width: 80%;
+    margin: 0px auto;
+    position: absolute;
+    top: 60px;
+}
 
+#message{
+    position: fixed;
+    bottom: 0px;
+    width: 80%;
+    height: 40px;
+}
+
+#type-message{
+    height: 100%;
+    width: inherit;
+}
+
+#room{
+    float: left;
+    height: 100%;
+    width: inherit;
+}
+
+#exit{
+    float: right;
+}

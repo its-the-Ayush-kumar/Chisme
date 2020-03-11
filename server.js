@@ -7,6 +7,7 @@ io.on('connection', socket => {
     //socket.emit('chat-message', 'Hello Bois!!!');
 
     socket.on('new-user', (userName, roomName) => {
+        console.log("yo");
         socket.join(roomName);
         users[socket.id] = userName;
         room[socket.id] = roomName;
