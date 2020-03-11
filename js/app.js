@@ -1,11 +1,12 @@
-const socket = io('https://chisme-chat.herokuapp.com/');//http://localhost:3000');
+const socket = io('http://localhost:3000');
 const chatContainer = document.getElementById('chat');
 const sendButton = document.getElementById('send-message');
 const textInput = document.getElementById('type-message');
 
 const name = prompt("What's your name?");
-newMessage("You joined!")
-socket.emit('new-user', name);
+const room = prompt("Which room you want to join?");
+newMessage(`You joined ${room}!`);
+socket.emit('new-user', name, room);
 
 socket.on('user-joined', userName => {
     newMessage(`${userName} joined!`);
